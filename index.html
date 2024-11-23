@@ -8,6 +8,29 @@
         <p id="i2"></p>
         <script>
             var n=[4,7,1,9,0,5];
+            function f1(){
+                document.getElementById("i1").innerHTML="Before sorting"+n;
+                n.sort(function(a,b){return a-b});
+                document.getElementById("i2").innerHTMl = "After sorting" + n;
+            }
+            var n = [4, 7, 1, 9, 0, 5];
+                function f2() {
+                    document.getElementById("i1").innerHTML = "Before sorting" + n;
+                    n.sort(function (a, b) {return b-a});
+                    document.getElementById("i2").innerHTMl = "After sorting" + n;
+                }
+                var s = ["Hey", "how", "are", "you"];
+                    function f3() {
+                        document.getElementById("i1").innerHTML = "Before sorting" + s;
+                        s.sort();
+                        document.getElementById("i2").innerHTMl = "After sorting" + s;
+                    }
+                    var s =["Hey", "how", "are", "you"];
+                        function f4() {
+                            document.getElementById("i1").innerHTML = "Before sorting" + s;
+                            s.sort().reverse();
+                            document.getElementById("i2").innerHTMl = "After sorting" + s;
+                        }
         </script>
     </body>
 </html>
